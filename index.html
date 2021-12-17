@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        .navbar{
+            /* background-color: darkslateblue; */
+            /* background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: left top; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .navTitles{
+            display:flex;
+            list-style-type: none;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            position: relative;
+           
+        }
+        li a{
+            text-align: center;
+            color: brown;
+            text-decoration: none;
+            padding: 15px;
+            
+        }
+        li a:hover{
+            color:chocolate;
+        }
+        button{
+
+            color: crimson;
+            position: relative;
+            border-radius:20px;
+            margin:10px;
+            padding:10px;
+            font-size:15px;
+            border:none;
+
+          }
+        .ra{
+           top:20%;
+           left:10%;
+           position: absolute;
+           width: 50%;
+           height: 50%;
+           font-size: 20px;
+           font-family:Georgia, 'Times New Roman', Times, serif;
+           color: black;
+        }
+       .ra h3{
+           font-size: 15px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           width:50%;
+        }
+        .ra p{
+            width: 50%;
+            font-weight: 600;  
+            
+        }
+        .ra p1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            width:50%;
+        }
+        .btn-group{
+            display:flex;
+            position: relative;
+            width:100%;
+            top: 10%;
+            left:180px;
+           
+        }
+        .btn-group .signup-btn{
+            text-align: center;
+            border-radius: 35px;
+            border:none;
+            padding:15px 50px;
+            cursor:pointer;
+            background-color: chartreuse;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .btn-group .play-btn{
+            margin-left:40px;
+            display: inline-flex;
+        }
+        .btn-group span{
+            margin:auto 20px;
+            font-size: 15px;
+            font-weight: 700;
+            color:brown;
+            cursor: pointer;
+        }
+        .play-btn-inner{
+            height: 50px;
+            width:50px;
+            border:2px solid transparent;
+            border-radius:50%;
+            background-color:red;
+        }
+        .play-btn-inner i{
+            padding:15px 19px;
+            font-size: 20px;
+        }
+        .pic{
+            top:0;
+            left:70%;
+            position:relative;
+            width:50%;
+        }
+        .ser{
+            display:flex;
+            position: relative;
+            width:50%;
+            flex-direction: row;
+            top:25%;
+            left:150px;
+            
+            }
+        .ser ul{
+            display: inline-flex;
+            margin: 30px;
+            text-align: center;
+        }
+        .ser ul li{
+            margin:50px;
+        }
+        .ser ul li img{
+            width:120px;
+            height:120px;
+            margin:50px;
+            padding:50px;
+        }
+        .ser ul li  h1{
+            margin-top:5px;
+        }
+        .ser ul li p{
+            margin-top:5px;
+        }
+            .social{
+                right:30px;
+                top:500px;
+                position: fixed;
+                font-size:20px;
+            }
+            .social ul  li{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top:5px;
+                text-align:center;
+            }
+            .social ul  li a{
+                color:blue;
+                display:block;
+            }
+    </style>
+</head>
+<body>
+        <div class="ku">
+        <div class="navbar">
+            <img src="w3.jpg" alt="w3schools" height="80" width="80">
+            <ul class="navTitles">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button><span></span>login</button>
+        </div>
+            </div>
+        <div class="ra">
+            <h3>AIRBNB FOR YATCHING</h3>
+            <p>Manage<br>Adeventures</p>
+            <p1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p1>
+            <div class="btn-group">
+                <div class="signup-btn">sign up</div>
+                    <div class="play-btn">
+                        <div class="play-btn-inner">
+                            <script src="https://kit.fontawesome.com/2724a3a5be.js" crossorigin="anonymous"></script>
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span>How it works</span>
+                    </div>
+            </div>
+        </div>
+            <div class="pic">
+                <img src="data:image/png;base64,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" alt="pic"
+                height="350px" width="350px">
+            </div>
+        <div class="ser">
+            <ul>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzwdxMOOHIVkap9jxjmiq6_ATLSI3BnsuyQ&usqp=CAU" alt="seo"
+                    height="150px" width="150px">
+                    <h1>SEO consultancy</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley o</p>
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRYc2S_vs072r0TwrW9wdrXEj4t2M9UBx66g&usqp=CAU" alt="com"
+                    width="350px" heiight="350px">
+                    <h1>competitor analysis</h1>
+                    <p>
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                    </p>
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZl851Ir2NwoubX4lW0anMEBjGCVfDPw-IA&usqp=CAU" alt="social"
+                    width="350px" heiight="3  50px">
+                    <h1>social media marketing</h1>
+                    <p>scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset</p>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a><li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+</body>
+</html>
